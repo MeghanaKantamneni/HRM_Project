@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>plan</title>
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <!-- header section starts  -->
+
+    <header>
+      <h1 class="heading">login</h1>
+
+      <div id="menu" class="fas fa-bars"></div>
+
+      <nav class="navbar">
+        <ul>
+          <li><a href="home.html">home</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="filters.html">filters</a></li>
+          <li><a href="login.html">login</a></li>
+        </ul>
+      </nav>
+    
+    </header>
+    
+    <!-- header section ends -->
+
+    <!-- plan section starts  -->
+    <section class="plan">
+      
+      <!-- Paste the content of login.html here -->
+      <div class="container" id="container">
+        
+        <div class="form-container sign-up">
+          
+          <form>
+            <h1>Admin Account</h1>
+            <span>use your email password to login</span>
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <button>Sign In</button>
+          </form>
+        </div>
+        
+        
+
+        <div class="form-container sign-in">
+          
+          
+          <form>
+            <h1>Sign In</h1>
+            <span>with your email password</span>
+            <input id="text" type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <div class="links-container">
+              <a href="#">Forget Your Password?</a>
+              <a href="#">Create New Account</a>
+            </div>
+            <button>Sign In</button>
+          </form>
+        </div>
+        <div class="toggle-container">
+          <div class="toggle">
+            <div class="toggle-panel toggle-left">
+              <h1>Welcome Back, Employee!</h1>
+              <p>Please enter your credentials to access your account.</p>
+              <button class="hidden" id="login">Empolyee</button>
+            </div>
+            <div class="toggle-panel toggle-right">
+              <h1>Welcome, Administrator!</h1>
+              <p>Enter your Administrator details to access the admin panel</p>
+              <button class="hidden" id="register">Admin</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- plan section ends -->
+   
+
+    <div class="footer">
+      <h1 class="credit">
+        created by <a href="#">20IT Team-A1</a> | all rights reserved.
+      </h1>
+    </div>
+    
+
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="script.js"></script>
+  </body>
+</html>

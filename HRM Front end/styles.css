@@ -1,0 +1,875 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+:root {
+  --blue: #512da8;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+*::selection {
+  background: var(--blue);
+  color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 0 7%;
+  padding-top: 12rem;
+}
+
+.btn {
+  font-size: 2rem;
+  padding: 0.7rem 3rem;
+  background: var(--blue);
+  color: #fff;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #333;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: white;
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+header .heading {
+  font-size: 3rem;
+  color:black;
+  padding: 1rem;
+  text-align: center;
+}
+
+
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: url(../images/home-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  flex-wrap: wrap;
+}
+
+.home .image {
+  flex: 1 1 40rem;
+}
+
+.home .image img {
+  width: 100%;
+}
+
+.home .content {
+  flex: 1 1 40rem;
+}
+
+.home .content h1 {
+  font-size: 5rem;
+  color: #444;
+}
+
+.home .content p {
+  font-size: 1.8rem;
+  color: #666;
+  padding: 1rem 0;
+}
+
+.about {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
+}
+
+.about .image {
+  flex: 1 1 40rem;
+}
+
+.about .image img {
+  width: 100%;
+}
+
+.about .content {
+  flex: 1 1 40rem;
+}
+
+.about .content h1 {
+  font-size: 5rem;
+  color: #444;
+}
+
+.about .content p {
+  font-size: 1.6rem;
+  color: #666;
+  padding: 1rem 0;
+}
+
+.Filters {
+  min-height: 100vh;
+  background:pink;
+}
+
+.Filters .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+.Filters .box-container .box {
+  background: #fff;
+  margin: 2rem;
+  padding: 1rem;
+  width: 30rem;
+  text-align: center;
+  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.3);
+}
+
+.Filters .box-container .box i {
+  font-size: 4rem;
+  padding: 1rem;
+  color: var(--blue);
+}
+
+.Filters .box-container .box h3 {
+  font-size: 2rem;
+  color: #444;
+}
+
+.Filters .box-container .box p {
+  font-size: 1.3rem;
+  color: #666;
+  padding: 1rem;
+}
+
+.plan {
+  min-height: 100vh;
+  background: pink;
+}
+
+.plan .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+.plan .box-container .box {
+  background: #fff;
+  margin: 1rem;
+  padding: 2rem;
+  width: 35rem;
+  text-align: center;
+  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.plan .box-container .box .title {
+  font-size: 3rem;
+  color: #666;
+  padding: 1rem 0;
+}
+
+.plan .box-container .box .price {
+  background: var(--blue);
+  color: #fff;
+  border-radius: 50%;
+  margin: 1rem auto;
+  height: 13rem;
+  width: 13rem;
+  line-height: 13rem;
+  text-align: center;
+  font-size: 2.9rem;
+}
+
+.plan .box-container .box .price span {
+  font-size: 2rem;
+}
+
+.plan .box-container .box ul li {
+  color: #666;
+  list-style: none;
+  font-size: 1.7rem;
+  padding: 1rem 0;
+}
+
+.contact {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.contact form {
+  flex: 1 1 40rem;
+  padding: 2rem;
+  margin: 1rem;
+  margin-top: 4rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.contact .content {
+  flex: 1 1 40rem;
+  padding: 3rem 1rem;
+}
+
+.contact form .box {
+  width: 100%;
+  color: #333;
+  height: 4rem;
+  font-size: 1.7rem;
+  border-bottom: 0.2rem solid rgba(0, 0, 0, 0.3);
+  text-transform: none;
+  margin: 1rem 0;
+}
+
+.contact form .box::placeholder {
+  text-transform: capitalize;
+}
+
+.contact form .box:focus {
+  border-color: var(--blue);
+}
+
+.contact form .message {
+  height: 15rem;
+  resize: none;
+}
+
+.contact .content h3 {
+  font-size: 4rem;
+  color: #444;
+}
+
+.contact .content p {
+  font-size: 1.8rem;
+  color: #666;
+  padding: 1rem 0;
+}
+
+.contact .content .icons {
+  font-size: 1.7rem;
+  color: #333;
+  padding: 0.7rem 0;
+}
+
+.contact .content .icons i {
+  padding-right: 0.5rem;
+  color: var(--blue);
+}
+
+.footer {
+  background: #333;
+}
+
+.footer .box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer .box-container .box {
+  margin: 2rem;
+  flex: 1 1 30rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.footer .box-container .box p {
+  font-size: 1.4rem;
+  color: #eee;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box a {
+  font-size: 1.8rem;
+  color: #eee;
+  padding: 0.4rem 0;
+  display: block;
+}
+
+.footer .box-container .box a:hover {
+  text-decoration: underline;
+}
+
+.footer .box-container .box:nth-child(2) {
+  text-align: center;
+}
+
+.footer .box-container form {
+  display: flex;
+  align-items: center;
+}
+
+.footer .box-container form input[type="email"] {
+  height: 4.1rem;
+  width: 100%;
+  font-size: 1.7rem;
+  padding: 0 1rem;
+}
+
+.footer .box-container form .btn {
+  margin-top: 0;
+}
+
+.footer .box-container form .btn:hover {
+  color: #333;
+  background: #ccc;
+}
+
+.footer .credit {
+  font-size: 2rem;
+  background: #222;
+  text-align: center;
+  color: #fff;
+  padding: 2rem 1rem;
+  font-weight: normal;
+}
+
+.footer .credit a {
+  color: var(--blue);
+}
+
+/* media queries  */
+
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+
+  .home .content {
+    text-align: center;
+  }
+
+  .home .content h1 {
+    font-size: 4rem;
+  }
+
+  .about .content h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+
+  header #menu {
+    display: block;
+  }
+
+  header .navbar {
+    position: fixed;
+    top: 6.2rem;
+    right: -120%;
+    height: 100%;
+    width: 100%;
+    border-top: 0.2rem solid rgba(0, 0, 0, 0.3);
+  }
+
+  header .navbar ul {
+    height: 100%;
+    width: 100%;
+    flex-flow: column;
+    background: #fff;
+    padding-bottom: 15rem;
+  }
+
+  header .navbar ul li {
+    text-align: center;
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  header .navbar ul li a {
+    font-size: 4rem;
+    color: #333;
+    display: block;
+  }
+
+  header .navbar ul li a:hover {
+    color: var(--blue);
+  }
+
+  .fa-times {
+    transform: rotate(180deg);
+  }
+
+  header .navbar.nav-toggle {
+    right: 0;
+  }
+
+  section {
+    padding-top: 5rem;
+  }
+
+  .footer .box-container .box:last-child {
+    text-align: center;
+  }
+
+  .footer .box-container .box:last-child p {
+    font-size: 1.7rem;
+  }
+
+  .footer .box-container .box:last-child form {
+    flex-flow: column;
+  }
+
+  .footer .box-container .box:last-child form .btn {
+    margin-top: 1rem;
+    width: 100%;
+  }
+}
+
+.box-link {
+  text-decoration: none;
+}
+
+.box {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.box:hover {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+*{
+	padding: 0;
+	margin: 0;
+}
+.wrapper{
+	background: url(bg7.jpg) no-repeat;
+	background-size: cover;
+	height: 100vh;
+	opacity: 1; 
+position: relative;
+}
+.navbar{
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.4); /* Background color with opacity */
+}
+
+.navbar .logo{
+  width: 130px;
+  height: 90px;
+  padding: 15px; /* Adjust padding to center the logo vertically */
+  margin-left: 0px; /* Add margin to separate the logo from the navbar edges */
+}
+
+.navbar ul{
+  float: right;
+  margin-right: 20px;
+  margin-top: 20px; /* Adjust margin-top to center the navigation vertically */
+}
+
+.navbar ul li{
+	list-style: none;
+	margin: 0 8px;
+	display: inline-block;
+	line-height: 80px;
+}
+.navbar ul li a{
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	padding: 6px 13px;
+	text-decoration: none;
+	transition: .4s;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+	background: red;
+	border-radius: 2px;
+}
+.wrapper .center{
+	position: absolute;
+	left: 30%;
+	top: 55%;
+	transform: translate(-50%, -50%);
+	font-family: sans-serif;
+	user-select: none;
+  font-size: 20px;
+}
+.center h1{
+	color: red;
+	font-size: 70px;
+	width: 900px;
+	font-weight: bold;
+	text-align: center;
+}
+.center h2{
+	color: white;
+	font-size: 70px;
+	font-weight: bold;
+	margin-top: 10px;
+	width: 885px;
+	text-align: center;
+}
+.center .buttons{
+	margin: 35px 280px;
+}
+.buttons button{
+	height: 50px;
+	width: 150px;
+	font-size: 18px;
+	font-weight: 600;
+	color: #ffb3b3;
+	background: red;
+	outline: none;
+	cursor: pointer;
+	border: 1px solid #cc0000;
+	border-radius: 25px;
+	transition: .4s;
+}
+.buttons .btn2{
+	margin-left: 25px;
+}
+.buttons button:hover{
+	background: #cc0000;
+}
+
+
+/*about*/
+
+
+/* Header */
+
+
+
+/* About Section */
+
+/*.about {
+	background: white;
+	background: white;
+	padding: 100px 0 20px 0;
+	text-align: center;
+}
+
+.about h1 {
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+}
+
+.about p {
+	font-size: larger ;
+	color:blue;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.about-info {
+	margin: 2rem 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: left;
+}
+
+.about-img {
+	width: 15rem;
+	height: 20rem;
+
+}
+
+.about-img img {
+	width: 50%;
+	height: 100%;
+	border-radius: 5px;
+	object-fit: contain;
+}
+
+.about-info p {
+	font-size: 1.3rem;
+	margin: 0 2rem;
+	text-align: justify;
+}
+.left-half{
+  width: 50%;
+}
+.right-half{
+  width: 50%;
+}*/
+
+marquee{
+  font-size: 20px;
+  font-weight: 800;
+  color:red;
+  font-family: sans-serif;
+  }
+
+button {
+	border: none;
+	outline: 0;
+	padding: 10px;
+	margin: 2rem;
+	font-size: 1rem;
+	color: white;
+	background-color: #40b736;
+	text-align: center;
+	cursor: pointer;
+	width: 15rem;
+	border-radius: 4px;
+}
+
+button:hover {
+	background-color: #1f9405;
+}
+
+body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  font-family: Arial, sans-serif; /* Specify default font family */
+  background-color:pink; /* Set background color */
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to next line if necessary */
+  justify-content: center; /* Center content horizontally */
+  align-items: flex-start; /* Align items to the top */
+  width: 100%;
+  margin: 20px; /* Adjust as needed */
+  padding: 10%;
+}
+.container1{
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to next line if necessary */
+  justify-content: center; /* Center content horizontally */
+  align-items: flex-start; /* Align items to the top */
+  width: 100%;
+  margin: 20px; /* Adjust as needed */
+  
+}
+.boxe1 {
+  width: 80%; /* Adjust for the gap */
+  margin-right: 20px; /* Add some space between items */
+  margin-bottom: 20px; /* Add some space below items */
+  padding: 20px; /* Add padding inside the box */
+  border: pink; /* Add border */
+  border-radius: 8px; /* Add border radius */
+  background-color:palevioletred; /* Background color */
+  display: flex; /* Use flexbox for layout */
+}
+.boxe1:hover {
+  background-color: pink; /* Change hover background color to transparent */
+}
+.boxe {
+  width: 100%; /* Adjust for the gap */
+  margin-right: 20px; /* Add some space between items */
+  margin-bottom: 20px; /* Add some space below items */
+  padding: 20px; /* Add padding inside the box */
+  border: pink; /* Add border */
+  border-radius: 8px; /* Add border radius */
+  
+  background-color:palevioletred; /* Background color */
+  display: flex; /* Use flexbox for layout */
+}
+.boxe:hover {
+  background-color: pink; /* Change hover background color to transparent */
+}
+
+.image-container {
+  flex: 0 0 50%; /* Set image container to take up 50% of the box width */
+  padding-right: 20px; /* Add space between image and text */
+}
+
+.image-container img {
+  max-width: 100%; /* Ensure images don't exceed their container width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure images don't affect text flow */
+}
+
+.text-container {
+  flex: 0 0 50%; /* Set text container to take up 50% of the box width */
+}
+
+.large-text {
+  font-size: 18px;
+  color:black; /* Default text color */
+  line-height: 1.5; /* Adjust line height for readability */
+  text-align: justify; /* Justify text */
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #333; /* Default heading color */
+}
+.p{
+  text-size-adjust: 20px;
+  font-style: italic;
+}
+
+/* Team Section */
+
+.team {
+	padding: 90px 0;
+	text-align: center;
+}
+
+.team h1 {
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+}
+
+.team-cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 15px;
+	margin-top: 20px;
+}
+
+.card {
+	background-color: white;
+	border-radius: 6px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	transition: transform 0.2s, box-shadow 0.2s;
+	width: 30rem;
+	height: 30rem;
+	margin-top: 10px;
+}
+
+.card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.card-img {
+	width: 15rem;
+	height: 12rem;
+}
+
+.card-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+}
+
+.card-info button {
+	margin: 2rem 1rem;
+}
+
+.card-name {
+	font-size: 2rem;
+	margin: 10px 0;
+}
+
+.card-role {
+	font-size: 1rem;
+	color: #888;
+	margin: 5px 0;
+}
+
+.card-email {
+	font-size: 1rem;
+	color: #555;
+}
+
+/* Footer */
+footer {
+	background-color: #222;
+	color: white;
+	text-align: center;
+	padding: 20px 0;
+}
+
+
+
+	.logo {
+		text-align: center;
+	}
+
+	
+
+	.about h1 {
+		font-size: 2rem;
+	}
+
+	.about p {
+		font-size: 0.9rem;
+	}
+
+	.about-info {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.about-img {
+		width: 60%;
+		height: 60%;
+		margin-bottom: 1rem;
+	}
+
+	.about-info p {
+		margin: 1rem 2rem;
+	}
+
+	.about-info button {
+		margin: 1rem 2rem;
+		width: 10rem;
+	}
+
+	.team {
+		margin: 0 1rem;
+	}
